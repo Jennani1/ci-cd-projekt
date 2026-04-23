@@ -3,7 +3,5 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
     base: '/ci-cd-project/',
     plugins: [vue()],
-    test: {
-        environment: 'jsdom'
-    }
+    
 })
