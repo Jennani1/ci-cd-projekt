@@ -1,7 +1,9 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-
 export default defineConfig({
-    base: '/sys25d-devops-inl-1-Jennani1/',
-    plugins: [vue()]
+    base: '/ci-cd-project/',
+    plugins: [vue()],
+    test: {
+        environment: 'jsdom'
+    }
 })
